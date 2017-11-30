@@ -1,0 +1,17 @@
+{
+  "name": "matches",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "boom": "^7.1.1",
+    "koa-body": "^2.5.0",
+    "koa-logger": "^3.1.0",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.41",
+    "@types/koa-router": "^7.0.26"
+  }
+}
