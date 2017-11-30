@@ -24,7 +24,7 @@ const notificationTypes = require('../constants/notification-constants');
 const MessageFactory = require('./message-factory');
 const MAX_CONNECTION_RETRIES = 5;
 
-const r = async () => {
+const asyncRouter = async () => {
 
   const db = await mongodb.MongoClient.connect(mongoURL);
   // TODO get your mongo stores
@@ -119,4 +119,4 @@ const r = async () => {
   return router;
 };
 
-module.exports = r;
+module.exports = asyncRouter;

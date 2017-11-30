@@ -9,6 +9,7 @@ function sleep(ms){
   const Koa = require('koa');
   const koaBody = require('koa-body');
 
+  // Need to await router because the module export is async
   const router = await require('./src/handlers/handlers');
   const app = new Koa();
 
